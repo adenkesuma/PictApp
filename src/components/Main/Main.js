@@ -37,14 +37,8 @@ const Main = ({result, condition}) => {
     console.log(result.length)
 
     return (
-        <div className='xs:grid-cols-1 xs:px-4 xs:mt-0 md:grid-cols-2 md:px-12 lg:grid-cols-3 lg:px-20 py-4 mt-10 grid items-start gap-4'>
-            <figure className='grid gap-4'>
-                {condition === true ? imageDefault : fetchImages}
-            </figure>
-             <figure className='grid gap-4'>
-                {condition === true ? imageDefault : fetchImages}
-            </figure>
-             <figure className='grid gap-4'>
+        <div>
+            <figure className='xs:grid-cols-1 xs:px-4 xs:mt-0 md:grid-cols-2 md:px-12 lg:grid-cols-3 lg:px-20 py-4 mt-10 grid items-start gap-4'>
                 {condition === true ? imageDefault : fetchImages}
             </figure>
         </div>
