@@ -13,8 +13,11 @@ module.exports = {
         'xl': '1450px'
       },
       backgroundImage: {
-        backgroundHeader: "url('./assets/backgroundImage.jpg')",
+        HeroImage: "url('./assets/hero-image.jpg')",
       },
+    },
+    fontFamily: {
+      'nova': ['Ibarra Real Nova', 'serif'],
     }
   },
   plugins: [],
