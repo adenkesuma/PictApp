@@ -1,3 +1,16 @@
+I make a website that works for people who want to find a good picture and also free without paying anything.
+
+this is the website design when on desktop ....
+![Cuplikan_layar_2023-02-19_212900-removebg-preview](https://user-images.githubusercontent.com/101191379/219955292-84a2a8aa-3c9d-4987-9d74-ebe822c624ae.png)
+
+and this is the website design when on mobile phone ...
+![Cuplikan_layar_2023-02-19_212832-removebg-preview](https://user-images.githubusercontent.com/101191379/219955324-53ae5812-dde7-42e5-bcea-a92a42b91721.png)
+![Cuplikan_layar_2023-02-19_212746-removebg-preview](https://user-images.githubusercontent.com/101191379/219955327-7709327e-8b12-44d3-b7df-cedd5ec181a2.png)
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
