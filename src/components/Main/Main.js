@@ -11,6 +11,7 @@ const Main = ({result, condition}) => {
             const response = await axios.get('https://api.unsplash.com/photos/?client_id=PD9uom2P9LqgNcAy9WOzfsu3epvIqzKSdT8BeIwTXGA');
             const data = await response.data;
 
+            console.log(data)
             setImage(data);
         };
 
@@ -37,8 +38,14 @@ const Main = ({result, condition}) => {
     console.log(result.length)
 
     return (
-        <div>
-            <figure className='xs:grid-cols-1 xs:px-4 xs:mt-0 md:grid-cols-2 md:px-12 lg:grid-cols-3 lg:px-20 py-4 mt-10 grid items-start gap-4'>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+            <figure className='flex flex-col gap-5'>
+                {condition === true ? imageDefault : fetchImages}
+            </figure>
+            <figure className='hidden md:flex flex-col gap-5'>
+                {condition === true ? imageDefault : fetchImages}
+            </figure>
+            <figure className='hidden md:flex flex-col gap-5'>
                 {condition === true ? imageDefault : fetchImages}
             </figure>
         </div>
