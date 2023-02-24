@@ -20,7 +20,7 @@ const Main = ({result, condition}) => {
 
     const imageDefault = image.map((img) => (
         <span  className='relative'>
-            <img className='w-full h-full' src={img.urls.small} alt="images for you" />
+            <img className='w-full h-full object-fit rounded-lg' src={img.urls.small} alt="images for you" />
             <MainDetails user={img.user.name} location={img.user.location} profile={img.user.profile_image} download={img.links.download}/>
         </span>
     ))
@@ -29,7 +29,7 @@ const Main = ({result, condition}) => {
     const fetchImages = result.map((res) => (
         <>
             <span className='relative' key={result.id}>
-                <img className='w-full h-full' src={res.urls.small} alt="images for you" />
+                <img className='w-full h-full object-cover rounded-lg' src={res.urls.small} alt="images for you" />
                 <MainDetails user={res.user.name} location={res.user.location} profile={res.user.profile_image} download={res.links.download}/>
             </span> 
         </>
@@ -38,16 +38,8 @@ const Main = ({result, condition}) => {
     console.log(result.length)
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
-            <figure className='flex flex-col gap-5'>
-                {condition === true ? imageDefault : fetchImages}
-            </figure>
-            <figure className='hidden md:flex flex-col gap-5'>
-                {condition === true ? imageDefault : fetchImages}
-            </figure>
-            <figure className='hidden md:flex flex-col gap-5'>
-                {condition === true ? imageDefault : fetchImages}
-            </figure>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5 px-6 md:px-10 md:py-6">
+            {condition === true ? imageDefault : fetchImages}
         </div>
     )
 }
